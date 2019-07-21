@@ -1,0 +1,170 @@
+.main-container {
+    display: flex;
+    padding-top: 70px;
+
+    align-items: center;
+    flex-direction: column;
+
+    background-color: lightcyan;
+}
+
+.nav-bar-container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    background-color: darkcyan;
+    justify-content: flex-start;
+}
+
+#logo{
+    color: white;
+    padding: 0 20px;
+}
+
+.nav-bar-container div {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar-container div span{
+    display: block;
+    color: white;
+    padding: 10px;
+}
+
+.nav-bar-container div span:hover, .active-button{
+    background-color: #007777;
+}
+
+
+.label-container{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+
+}
+
+.label-auth{
+    flex: 1;
+}
+
+.label-container input{
+    flex: 3;
+
+    border: 0;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.label-auth{
+    width: 60px;
+    color: white;
+}
+
+.container{
+    background-color: darkcyan;
+
+    width: 50%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 20px;
+
+    border: 0;
+
+    border-radius: 10px;
+
+    margin: 20px auto;
+
+    color: white;
+
+    box-shadow: 2px 2px 5px black;
+}
+
+.submit-button{
+    padding: 10px;
+
+    margin: 5px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #04d100;;
+    color: white;
+    font-weight: bold;
+}
+
+.remove-button{
+    padding: 10px;
+
+    margin: 5px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #ff0019;
+    color: white;
+    font-weight: bold;
+}
+
+.submit-button:hover{
+
+    background-color: #04b800;
+}
+
+.remove-button:hover{
+    background-color: #d30016;
+}
+
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.header{
+    color: white;
+}
+
+.room{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image{
+    width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 1000px){
+    body{
+        padding-top: 140px;
+    }
+
+    .container{
+        width: 90%;
+
+    }
+
+    .nav-bar-container{
+        min-height: 140px;
+        flex-direction: column;
+    }
+
+    #menu-button{
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+
+    #menu-button span{
+        width: 100%;
+    }
+}
