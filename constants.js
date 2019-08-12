@@ -5,9 +5,7 @@ class Components {
     static Room = "Room";
 }
 
-
-
-const ServerPath = "http://api-ws.sevsu.ru/";
+const ServerPath = "http://localhost:5000/";
 const ApiPath = ServerPath + "api";
 
 const Headers = [
