@@ -7,8 +7,10 @@ class Macro extends React.Component {
                 <div className="controls">
                     <h3 className="name">{macro.name}</h3>
                     <div className="controls">
-                        <button className="submit-button" onClick={() => this.props.activateMacro(macro.id)}>Активировать</button>
-                        <button className="remove-button" onClick={() => this.props.removeMacro(macro.id)}>Удалить</button>
+                        <button className="submit-button"
+                                onClick={() => this.props.activateMacro(macro.id)}>Активировать</button>
+                        <button className="remove-button"
+                                onClick={() => this.props.removeMacro(macro.id)}>Удалить</button>
                     </div>
                 </div>
 

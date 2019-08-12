@@ -1,6 +1,6 @@
 class App extends React.Component {
     state = {
-        activeComponent: <Login tokenRecieved={(token) => this.tokenRecieved(token)}/>,
+        activeComponent: <Login tokenRecieved={(token) => this.tokenReceived(token)}/>,
         componentProps: null,
         token: null
     };
@@ -17,7 +17,7 @@ class App extends React.Component {
             </div>);
     }
 
-    tokenRecieved(token) {
+    tokenReceived(token) {
         this.setState({token: token,});
 
         this.homeClicked();
@@ -39,7 +39,7 @@ class App extends React.Component {
     }
 
     async roomClicked(roomId, rooms) {
-        let room = rooms.filter(room => room.id == roomId)[0];
+        let room = rooms.filter(room => room.id === roomId)[0];
 
         let devices = await this.client.getDevices(roomId, this.state.token);
 

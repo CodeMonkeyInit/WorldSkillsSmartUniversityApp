@@ -17,7 +17,10 @@ class AddMacro extends React.Component {
         return (
             <form onSubmitCapture={(event) => this.submit(event)} className="container macro-container">
                 <h1>Добавление макроса</h1>
-                <textarea placeholder="Тут я ожидаю JSON добавления макроса" value={this.state.json} onChange={event => this.setState({json: event.target.value})} cols="30" rows="10"/>
+                <textarea placeholder="Тут я ожидаю JSON добавления макроса"
+                          value={this.state.json}
+                          onChange={event => this.setState({json: event.target.value})}
+                          cols="30" rows="10"/>
                 <button type="submit" className="submit-button">Добавить новый</button>
             </form>
         )
